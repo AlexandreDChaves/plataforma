@@ -1,0 +1,25 @@
+body {
+    background-color: #343a40;
+    color: #ffffff; /* Para texto branco */
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+img {
+    border-radius: 50%; /* Deixa a imagem circular */
+    background: linear-gradient(135deg, #00b4d8, #48cae4); /* Gradiente no fundo */
+    padding: 10px;
+   
+}
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+

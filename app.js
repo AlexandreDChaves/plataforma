@@ -7,6 +7,9 @@ app.use(express.static('public'))
 app.get("/", (req,res) => {
     res.render("index")   
 })
+app.get("/perguntar", (req,res) => {
+    res.render("perguntar")   
+})
 
 app.listen(3000,() => {
     console.log("servidor ok")
