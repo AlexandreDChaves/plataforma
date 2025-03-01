@@ -13,3 +13,5 @@ const Pergunta = conection.define('pergunta', {
 })
 
 Pergunta.sync({force: false}).then(() => {})
+
+module.exports = Pergunta
