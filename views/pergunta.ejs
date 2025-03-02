@@ -19,13 +19,25 @@
             </div>
         </div>
     </div>  
-    <div class="container my-5">
-        <form>
-            
+    <div class="container mt-5">
+        <form method="POST" action="/responder">
             <textarea placeholder="Digite sua resposta" class="form-control mb-3" name="corpo"></textarea>
+            <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
             <button type="submit" class="btn btn-primary mt-2">Responder</button>
         </form> 
     </div>  
+    <% respostas.forEach(resposta => {%>
+        <div class="container mt-5">
+            <div class="card p-3">
+                <div class="card-body">
+                        <p><%= resposta.corpo %></p>
+                </div>
+            </div>
+        </div>
+    <% }) %>
+    <div class="container mt-5">
+        <a href="/perguntar" class="btn btn-secondary">Voltar</a>
+    </div>
 </body>
 <%- include('partials/footer.ejs'); %>
 
